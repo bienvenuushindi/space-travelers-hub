@@ -18,12 +18,8 @@ function App() {
   </div>
 =======
   return (
-<<<<<<< HEAD
     <div className="App">
     </div>
-=======
-    <div className="App" />
->>>>>>> 89cbc7a4dce4b89d6a89ce1dfa8204990f3b781f
   );
 >>>>>>> 35b4adbf89eb807c22decd67eec51e3b3cb3ed06
 }
