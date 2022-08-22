@@ -15,7 +15,3 @@ root.render(
     </Provider>
   </React.StrictMode>,
 );
-<<<<<<< HEAD
-
-=======
->>>>>>> 89cbc7a4dce4b89d6a89ce1dfa8204990f3b781f
