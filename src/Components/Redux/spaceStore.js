@@ -2,7 +2,8 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit';
 
 const rootReducer = combineReducers({
   /* space: ,
-  missions: , */
+  missions: , 
+  profile: ,*/
 });
 
 const spaceStore = configureStore(
