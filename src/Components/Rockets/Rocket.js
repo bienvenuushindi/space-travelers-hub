@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import RocketItem from './rocket-item';
-import { fetchRockets, reserveRocket } from '../Redux/rocket/actions';
+import { fetchRockets, toggleReserveRocket } from '../Redux/rocket/actions';
 
 const Rockets = () => {
   const dispatch = useDispatch();
@@ -15,7 +15,8 @@ const Rockets = () => {
       name={item.name}
       description={item.description}
       image={item.image[0]}
-      reserve={() => dispatch(reserveRocket(item.id))}
+      reserved={item.reserved}
+      reserve={() => dispatch(toggleReserveRocket(item.id))}
     />
   ));
   return (

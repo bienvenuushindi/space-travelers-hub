@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const RocketItem = (props) => {
   const {
-    name, description, image, reserve,
+    name, description, image, reserve, reserved,
   } = props;
   return (
     <div className="row m-2">
@@ -17,7 +17,12 @@ const RocketItem = (props) => {
           {description}
         </div>
         <div className="control">
+          {!reserved && (
           <button type="button" onClick={reserve} className="btn btn-primary">Reserve Rocket</button>
+          )}
+          {reserved && (
+            <button type="button" onClick={reserve} className="btn btn-default">Cancel Reservation</button>
+          )}
         </div>
       </div>
     </div>
@@ -28,5 +33,7 @@ RocketItem.propTypes = {
   description: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   reserve: PropTypes.func.isRequired,
+  reserved: PropTypes.bool,
 };
+RocketItem.defaultProps = { reserved: false };
 export default RocketItem;
