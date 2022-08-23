@@ -45,7 +45,11 @@ code {
 }
 
 .logo img {
-  width: 16%;
+  width: 9%;
+}
+
+nav {
+  padding-right: 9%;
 }
 
 nav ul {
@@ -60,14 +64,10 @@ nav ul {
   width: 90%;
 }
 
-.container table { 
-  width: 60%;
-}
-
 header {
   padding-bottom: 26px;
   border-bottom: 1px solid #000;
-  width: 99%;
+  width: 98%;
 }
 
 .data td {
