@@ -76,7 +76,16 @@ header {
   justify-content: center;
 }
 
+table,
 td,
 th {
   border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+tr:nth-child(odd)    { background-color:#eee; }
+tr:nth-child(even)    { background-color:#fff; }
+
+tbody tr td:first-of-type {
+  font-weight: bold;
 }
