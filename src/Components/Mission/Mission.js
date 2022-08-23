@@ -22,7 +22,7 @@ const Mission = () => {
         <thead>
           <tr>
             <th>Mission</th>
-            <th colSpan={2}>Description</th>
+            <th>Description</th>
             <th>Status</th>
             <th>    </th>
           </tr>

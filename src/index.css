@@ -63,3 +63,21 @@ nav ul {
 .container table { 
   width: 60%;
 }
+
+header {
+  padding-bottom: 26px;
+  border-bottom: 1px solid #000;
+  width: 99%;
+}
+
+.data td {
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+table,
+td,
+th {
+  border: 1px solid #000;
+}
