@@ -25,3 +25,41 @@ code {
     'Courier New',
     monospace;
 }
+
+.App {
+  padding: 10px;
+}
+
+.mainHeader {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  column-gap: 22px;
+  align-items: center;
+}
+
+.logo img {
+  width: 16%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  column-gap: 22px;
+}
+
+.container {
+  padding:41px;
+  width: 90%;
+}
+
+.container table { 
+  width: 60%;
+}

@@ -18,7 +18,20 @@ const Mission = () => {
   ));
   return (
     <div className="container">
-      {missionList}
+      <table>
+        <thead>
+          <tr>
+            <th>Mission</th>
+            <th colSpan={2}>Description</th>
+            <th>Status</th>
+            <th>    </th>
+          </tr>
+        </thead>
+        <tbody>
+          {missionList}
+        </tbody>
+      </table>
+
     </div>
   );
 };

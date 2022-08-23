@@ -5,8 +5,10 @@ import planet from '../images/planet.png';
 const Nav = () => (
   <header>
     <div className="mainHeader">
-      <img src={planet} alt="Planet Space Logo to Infinity and Beyond" />
-      <h1>Space Travelers Hub</h1>
+      <div className="logo">
+        <img src={planet} alt="Planet Space Logo to Infinity and Beyond" />
+        <h1>Space Travelers Hub</h1>
+      </div>
       <nav>
         <ul>
           <NavLink to="/">
