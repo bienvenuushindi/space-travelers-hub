@@ -1,4 +1,5 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
+import thunk from 'redux-thunk';
 
 const rootReducer = combineReducers({
   /* space: ,
@@ -9,6 +10,7 @@ const rootReducer = combineReducers({
 const spaceStore = configureStore(
   {
     reducer: rootReducer,
+    middleware: [thunk],
   },
 );
 
