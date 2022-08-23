@@ -18,7 +18,7 @@ const missionReducer = (state = [], action = {}) => {
 
     case SWITCH_MISSION: {
       return state.map((mission) => {
-        if (mission.id !== action.id) return mission;
+        if (mission.mission_id !== action.id) return mission;
         return { ...mission, joined: !mission.joined };
       });
     }
