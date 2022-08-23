@@ -10,10 +10,14 @@ const missionList = (props) => {
     <tr className="data">
       <td>{ mission_name }</td>
       <td>{ description }</td>
-      {/* {joined && (<td>Active Member</td>)} */}
-      {!joined && (<td>Not a Member</td>)}
-      {/* {joined && (<td><button type="button" onClick={join}>Leave Mission</button></td>)} */}
-      {!joined && (<td><button type="button" onClick={join}>Join Mission</button></td>)}
+      <td>
+        {joined && ('Active Member')}
+        {!joined && ('Not a Member')}
+      </td>
+      <td>
+        {joined && (<button type="button" onClick={join}>Leave Mission</button>)}
+        {!joined && (<button type="button" onClick={join}>Join Mission</button>)}
+      </td>
     </tr>
   );
 };
