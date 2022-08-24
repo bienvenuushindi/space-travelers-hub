@@ -11,7 +11,6 @@ const rootReducer = combineReducers({
 const spaceStore = configureStore(
   {
     reducer: rootReducer,
-    middleware: [thunk],
   },
   applyMiddleware(thunk),
 );

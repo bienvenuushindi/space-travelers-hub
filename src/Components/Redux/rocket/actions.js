@@ -6,7 +6,6 @@ export const RESERVED_ROCKETS = 'space-travelers-hub/rocket/RESERVED_ROCKETS';
 export const LOAD_ROCKETS = 'space-travelers-hub/rocket/LOAD_ROCKETS';
 export const FETCH_ROCKETS = 'space-travelers-hub/rocket/FETCH_ROCKETS';
 export const FETCH_ROCKETS_FULFILLED = 'space-travelers-hub/rocket/FETCH_ROCKETS/fulfilled';
-
 export const fetchRockets = createAsyncThunk(FETCH_ROCKETS, async () => load());
 export const toggleReserveRocket = (id) => ({ type: TOGGLE_RESERVE, id });
 export const getReservedRockets = () => ({ type: RESERVED_ROCKETS });
