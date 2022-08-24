@@ -25,3 +25,67 @@ code {
     'Courier New',
     monospace;
 }
+
+.App {
+  padding: 10px;
+}
+
+.mainHeader {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  column-gap: 22px;
+  align-items: center;
+}
+
+.logo img {
+  width: 9%;
+}
+
+nav {
+  padding-right: 9%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  column-gap: 22px;
+}
+
+.container {
+  padding:41px;
+  width: 90%;
+}
+
+header {
+  padding-bottom: 26px;
+  border-bottom: 1px solid #000;
+  width: 98%;
+}
+
+.data td {
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+table,
+td,
+th {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+tr:nth-child(odd)    { background-color:#eee; }
+tr:nth-child(even)    { background-color:#fff; }
+
+tbody tr td:first-of-type {
+  font-weight: bold;
+}
