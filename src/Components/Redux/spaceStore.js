@@ -1,9 +1,11 @@
-import { combineReducers, configureStore } from '@reduxjs/toolkit';
+import { combineReducers, configureStore, applyMiddleware } from '@reduxjs/toolkit';
+import thunk from 'redux-thunk';
+import rocketReducer from './rocket/reducer';
 import thunk from 'redux-thunk';
 import missionReducer from './Mission/Reducers/missionReducer';
 
 const rootReducer = combineReducers({
-  /* space: , */
+  rockets: rocketReducer,
   missions: missionReducer,
   /* profile: , */
 });
@@ -11,8 +13,8 @@ const rootReducer = combineReducers({
 const spaceStore = configureStore(
   {
     reducer: rootReducer,
-    middleware: [thunk],
   },
+  applyMiddleware(thunk),
 );
 
 export default spaceStore;
