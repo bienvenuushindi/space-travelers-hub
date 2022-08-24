@@ -1,6 +1,4 @@
 const url = 'https://api.spacexdata.com/v3/rockets';
-const load = async () => {
-  let result = [];
 export const rockets = {};
 const load = async () => {
   await fetch(url).then((res) => res.json()).then((data) => {
