@@ -14,14 +14,15 @@ const RocketItem = (props) => {
           {name}
         </div>
         <div className="description">
+          {reserved && (<span className="badge bg-success small  mx-1">Reserved</span>)}
           {description}
         </div>
         <div className="control">
           {!reserved && (
-          <button type="button" onClick={reserve} className="btn btn-primary">Reserve Rocket</button>
+          <button type="button" onClick={reserve} className="btn btn-primary small">Reserve Rocket</button>
           )}
           {reserved && (
-            <button type="button" onClick={reserve} className="btn btn-default">Cancel Reservation</button>
+            <button type="button" onClick={reserve} className="btn btn-light border">Cancel Reservation</button>
           )}
         </div>
       </div>
