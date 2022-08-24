@@ -6,7 +6,6 @@ import missionReducer from './Mission/Reducers/missionReducer';
 const rootReducer = combineReducers({
   rockets: rocketReducer,
   missions: missionReducer,
-  /* profile: , */
 });
 
 const spaceStore = configureStore(

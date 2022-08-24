@@ -1,6 +1,8 @@
 const url = 'https://api.spacexdata.com/v3/rockets';
 const load = async () => {
   let result = [];
+export const rockets = {};
+const load = async () => {
   await fetch(url).then((res) => res.json()).then((data) => {
     const filterBykeys = (array) => array.map((item) => {
       const {
@@ -10,9 +12,8 @@ const load = async () => {
         id, name, type, description, image,
       };
     });
-    result = [...filterBykeys(data)];
+    rockets.data = [...filterBykeys(data)];
   });
-  return { rockets: result };
+  return { rockets: rockets.data };
 };
-
 export default load;
