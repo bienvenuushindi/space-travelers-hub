@@ -6,10 +6,10 @@ const getMissionList = async () => {
   await fetch(url).then((res) => res.json()).then((data) => {
     const filterBykeys = (array) => array.map((item) => {
       const {
-        mission_id, description, mission_name,
+        mission_id, description, mission_name, joined,
       } = item;
       return {
-        mission_id, mission_name, description,
+        mission_id, mission_name, description, joined,
       };
     });
     result = [...filterBykeys(data)];
