@@ -27,13 +27,13 @@ code {
 }
 
 .App {
-  padding: 10px;
+  width: 90%;
+  margin: auto;
 }
 
 .mainHeader {
   display: flex;
   flex-direction: row;
-  width: 100%;
   justify-content: space-between;
   align-items: center;
 }
@@ -45,47 +45,111 @@ code {
 }
 
 .logo img {
-  width: 9%;
+  width: 100px;
+  height: 100px;
 }
 
-nav {
+/* nav {
   padding-right: 9%;
-}
+} */
 
 nav ul {
   display: flex;
   list-style: none;
   justify-content: space-between;
   column-gap: 12px;
+  align-items: center;
+}
+
+nav ul a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.mission {
+  border-right: 1px solid #878787;
+  padding-right: 13px;
 }
 
 .container {
-  padding: 41px;
-  width: 90%;
+  padding: 41px 17px;
 }
 
 header {
   padding-bottom: 26px;
-  border-bottom: 1px solid #000;
-  width: 98%;
+  padding-left: 17px;
+  padding-top: 10px;
+  padding-right: 30px;
+  border-bottom: 1px solid #cdcdcd;
 }
 
 table,
 td,
 th {
-  border: 1px solid #000;
+  border: 1px solid #dcdcdc;
   border-collapse: collapse;
+  padding: 5px;
+  text-align: left;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
+thead {
+  background-color: #fff;
 }
 
 .data td {
-  text-align: center;
-  vertical-align: middle;
-  justify-content: center;
+  text-align: left;
+  vertical-align: baseline;
+  padding: 12px;
+  font-size: medium;
+  justify-content: left;
 }
 
-tr:nth-child(odd) { background-color: #eee; }
+tr:nth-child(odd) {
+  background-color: rgb(222, 221, 221);
+  text-align: left;
+}
 tr:nth-child(even) { background-color: #fff; }
 
 tbody tr td:first-of-type {
   font-weight: bold;
+}
+
+.notActive {
+  background-color: grey;
+  color: white;
+  border-radius: 6px;
+  padding: 3px 10px;
+}
+
+.active {
+  /* background-color: #20b6a8; 
+  color: white; */
+  border-radius: 6px;
+  padding: 3px 10px;
+}
+
+.leave {
+  padding: 3px 13px;
+  border-radius: 5px;
+  border: 1.7px solid;
+}
+
+.join {
+  background-color: transparent;
+  border: 1.7px solid #f00;
+  color: #f00;
+  border-radius: 5px;
+  border-color: #f00;
+  padding: 3px 13px;
 }
