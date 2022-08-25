@@ -7,7 +7,7 @@ const Profile = () => {
   const rockets = useSelector((state) => state.rockets);
 
   const rocketsList = rockets.filter((r) => r.reserved === true).map((rocket) => (<li key={rocket.id} className="list-group-item">{rocket.name}</li>));
-  const list = missions.filter((r) => r.reserved === true).map((mission) => (
+  const list = missions.filter((r) => r.joined === true).map((mission) => (
     <li key={mission.mission_id} className="list-group-item">{mission.mission_name}</li>));
 
   return (

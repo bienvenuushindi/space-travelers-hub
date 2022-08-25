@@ -111,7 +111,7 @@ thead {
   text-align: left;
   vertical-align: baseline;
   padding: 12px;
-  font-size: medium;
+  font-size: small;
   justify-content: left;
 }
 
@@ -132,9 +132,9 @@ tbody tr td:first-of-type {
   padding: 3px 10px;
 }
 
-.active {
-  /* background-color: #20b6a8; 
-  color: white; */
+.getActive {
+  background-color: #20b6a8; 
+  color: white;
   border-radius: 6px;
   padding: 3px 10px;
 }

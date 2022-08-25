@@ -11,7 +11,7 @@ const missionList = (props) => {
       <td style={{ width: '10%' }}>{ mission_name }</td>
       <td style={{ width: '60%' }}>{ description }</td>
       <td>
-        {joined && (<span style={{ backgroundColor: '#20b6a8', color: '#fff' }} className="active">ACTIVE MEMBER</span>)}
+        {joined && (<span className="getActive">ACTIVE MEMBER</span>)}
         {!joined && (<span className="notActive">NOT A MEMBER</span>)}
       </td>
       <td>
