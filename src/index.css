@@ -66,6 +66,12 @@ nav ul a {
   background-color: transparent;
 }
 
+nav ul a:active,
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
 .mission {
   border-right: 1px solid #878787;
   padding-right: 13px;
