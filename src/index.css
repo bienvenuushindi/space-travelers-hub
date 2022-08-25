@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Courier New',
+    monospace;
+}
+
+.App {
+  width: 90%;
+  margin: auto;
+}
+
+.mainHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  column-gap: 22px;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+/* nav {
+  padding-right: 9%;
+} */
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  column-gap: 12px;
+  align-items: center;
+}
+
+nav ul a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+nav ul a:focus {
+  text-decoration: underline;
+}
+
+nav ul a:active {
+  text-decoration: underline;
+}
+
+nav ul a:hover {
+  text-decoration: underline;
+}
+
+.mission {
+  border-right: 1px solid #878787;
+  padding-right: 13px;
+}
+
+.container {
+  padding: 41px 17px;
+}
+
+header {
+  padding-bottom: 26px;
+  padding-left: 17px;
+  padding-top: 10px;
+  padding-right: 30px;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+table,
+td,
+th {
+  border: 1px solid #dcdcdc;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: left;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
+thead {
+  background-color: #fff;
+}
+
+.data td {
+  text-align: left;
+  vertical-align: baseline;
+  padding: 12px;
+  font-size: small;
+  justify-content: left;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(222, 221, 221);
+  text-align: left;
+}
+tr:nth-child(even) { background-color: #fff; }
+
+tbody tr td:first-of-type {
+  font-weight: bold;
+}
+
+.notActive {
+  background-color: grey;
+  color: white;
+  border-radius: 6px;
+  padding: 3px 10px;
+}
+
+.getActive {
+  background-color: #20b6a8;
+  color: white;
+  border-radius: 6px;
+  padding: 3px 10px;
+}
+
+.leave {
+  padding: 3px 13px;
+  border-radius: 5px;
+  border: 1.7px solid;
+}
+
+.join {
+  background-color: transparent;
+  border: 1.7px solid #f00;
+  color: #f00;
+  border-radius: 5px;
+  border-color: #f00;
+  padding: 3px 13px;
+}
