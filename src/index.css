@@ -66,9 +66,15 @@ nav ul a {
   background-color: transparent;
 }
 
-nav ul a:active,
-a:hover,
-a:focus {
+nav ul a:focus {
+  text-decoration: underline;
+}
+
+nav ul a:active {
+  text-decoration: underline;
+}
+
+nav ul a:hover {
   text-decoration: underline;
 }
 
@@ -139,7 +145,7 @@ tbody tr td:first-of-type {
 }
 
 .getActive {
-  background-color: #20b6a8; 
+  background-color: #20b6a8;
   color: white;
   border-radius: 6px;
   padding: 3px 10px;
