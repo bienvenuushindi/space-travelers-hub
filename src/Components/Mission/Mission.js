@@ -23,7 +23,7 @@ const Mission = () => {
     <div className="container">
       <table>
         <thead>
-          <tr>
+          <tr style={{ backgroundColor: '#fff' }}>
             <th>Mission</th>
             <th>Description</th>
             <th>Status</th>

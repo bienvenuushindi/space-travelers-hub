@@ -12,13 +12,13 @@ const Profile = () => {
   return (
     <div className="row container mx-auto">
       <div className="col-md-6 card">
-        <h2>My Joined Missions </h2>
+        <h2>My Joined Missions</h2>
         <ul className="list-group list-group-flush">
           {list}
         </ul>
       </div>
       <div className="col-md-6 card">
-        <h2>My Reserved Rockets </h2>
+        <h2>My Reserved Rockets</h2>
         <ul className="list-group list-group-flush">
           {rocketsList}
         </ul>
