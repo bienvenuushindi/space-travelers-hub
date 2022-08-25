@@ -1,5 +1,5 @@
 import {
-  GET_JOINED, GET_MISSIONS_FULFILLED, JOINED_MISSIONS, SWITCH_MISSION,
+  GET_JOINED, GET_MISSIONS_FULFILLED, SWITCH_MISSION,
 } from '../Actions/missionAction';
 
 const missionReducer = (state = [], action = {}) => {
@@ -10,10 +10,6 @@ const missionReducer = (state = [], action = {}) => {
 
     case GET_JOINED: {
       return [...action.missions];
-    }
-
-    case JOINED_MISSIONS: {
-      return [...state.filter((missions) => missions.joined)];
     }
 
     case SWITCH_MISSION: {

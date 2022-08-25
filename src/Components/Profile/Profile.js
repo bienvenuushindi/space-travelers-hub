@@ -1,21 +1,12 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { getJoinedMissions } from '../Redux/Mission/Actions/missionAction';
-import { getReservedRockets } from '../Redux/rocket/actions';
+/* eslint-disable camelcase */
+
+import { useSelector } from 'react-redux';
 
 const Profile = () => {
-  const dispatch = useDispatch();
   const missions = useSelector((state) => state.missions);
   const rockets = useSelector((state) => state.rockets);
-  useEffect(() => {
-    dispatch(getJoinedMissions());
-  }, []);
-  useEffect(() => {
-    dispatch(getReservedRockets());
-  }, []);
-
-  const rocketsList = rockets.map((rocket) => (<li key={rocket.id} className="list-group-item">{rocket.name}</li>));
-  const list = missions.map((mission) => (
+  const rocketsList = rockets.filter((r) => r.reserved === true).map((rocket) => (<li key={rocket.id} className="list-group-item">{rocket.name}</li>));
+  const list = missions.filter((r) => r.joined === true).map((mission) => (
     <li key={mission.mission_id} className="list-group-item">{mission.mission_name}</li>));
 
   return (

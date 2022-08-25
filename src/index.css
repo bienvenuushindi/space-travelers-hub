@@ -56,7 +56,7 @@ nav ul {
   display: flex;
   list-style: none;
   justify-content: space-between;
-  column-gap: 22px;
+  column-gap: 12px;
 }
 
 .container {
