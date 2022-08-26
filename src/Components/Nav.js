@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom';
 import planet from '../images/planet.png';
 
 const Nav = () => (
-  <header>
-    <div className="mainHeader">
+  <header className="shadow pb-2">
+    <div className="mainHeader container my-0 py-0">
       <div className="logo">
         <img src={planet} alt="Planet Space Logo to Infinity and Beyond" />
         <h1>Space Travelers Hub</h1>
