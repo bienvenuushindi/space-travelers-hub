@@ -5,7 +5,6 @@ import { useSelector } from 'react-redux';
 const Profile = () => {
   const missions = useSelector((state) => state.missions);
   const rockets = useSelector((state) => state.rockets);
-
   const rocketsList = rockets.filter((r) => r.reserved === true).map((rocket) => (
     <li key={rocket.id} className="list-group-item">{rocket.name}</li>));
   const list = missions.filter((r) => r.joined === true).map((mission) => (
