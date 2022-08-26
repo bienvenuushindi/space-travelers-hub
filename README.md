@@ -16,7 +16,7 @@
 - React Router
 
 ## Live Demo (if available)
-
+[Demo](https://spacetouristhub.netlify.app/)
 ## Getting Started
 
 Follow the commands of React to get started with the project.
