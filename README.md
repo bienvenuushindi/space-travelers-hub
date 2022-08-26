@@ -1,10 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Space Travellers Hub
-
 > A React Project using SpaceX APIs and fetching data for the Space launches and Missions. Created using React JS
-
-
 ## Built With
 
 - HTML, CSS, Web Pack, Javascript
@@ -16,7 +12,7 @@
 - React Router
 
 ## Live Demo (if available)
-
+[Demo](https://spacetouristhub.netlify.app/)
 ## Getting Started
 
 Follow the commands of React to get started with the project.
