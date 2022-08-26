@@ -79,7 +79,7 @@ Leave the pull request open for review by peers
 
 ## 🤝 Contributing
 
-I have opened issues in the Issues section of the project. Feel free to add your comments to the issues
+I will open issues in the Issues section of the project. Feel free to add your comments to the issues
 
 ## Show your support
 
